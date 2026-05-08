@@ -1,0 +1,89 @@
+<!--
+Nombre: Alberto Josue Hernandez Acosta
+Descripción: Formulario de encuesta sobre un producto utilizando HTML.
+Fecha: 06 de mayo de 2026
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta</title>
+</head>
+<body>
+
+    <h1>Encuesta de  del Producto</h1>
+
+    <form action="mailto:correo@ejemplo.com" method="post">
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo"><br><br>
+
+        <p>1. ¿Conoce el usuario el producto?</p>
+        <input type="radio" id="si1" name="conoce" value="Si">
+        <label for="si1">Sí</label><br>
+
+        <input type="radio" id="no1" name="conoce" value="No">
+        <label for="no1">No</label><br><br>
+
+        <p>2. ¿Ha adquirido alguna vez el producto?</p>
+        <input type="radio" id="si2" name="adquirido" value="Si">
+        <label for="si2">Sí</label><br>
+
+        <input type="radio" id="no2" name="adquirido" value="No">
+        <label for="no2">No</label><br><br>
+
+        <p>3. En una escala de 1 a 10 ¿Qué tan satisfecho ha quedado con el uso del producto?</p>
+
+        <select name="satisfaccion">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select><br><br>
+
+        <p>4. Marque sólo las casillas que crea definen el producto:</p>
+
+        <input type="checkbox" id="util" name="producto" value="Util">
+        <label for="util">Es útil</label><br>
+
+        <input type="checkbox" id="precio" name="producto" value="Buen precio">
+        <label for="precio">Tiene buen precio</label><br>
+
+        <input type="checkbox" id="presentacion" name="producto" value="Presentacion adecuada">
+        <label for="presentacion">Su presentación es adecuada</label><br>
+
+        <input type="checkbox" id="durabilidad" name="producto" value="Durabilidad">
+        <label for="durabilidad">Tiene durabilidad</label><br><br>
+
+        <p>5. En una escala de 1 a 10 ¿Qué tan probable es que recomiende el producto a sus amigos?</p>
+
+        <select name="recomendacion">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select><br><br>
+
+        <p>6. Añada su opinión sobre el producto:</p>
+
+        <textarea name="opinion" rows="5" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar datos">
+
+    </form>
+
+</body>
+</html>
